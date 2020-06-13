@@ -37,7 +37,7 @@ install:
 	
 archive: VERSION = "dev"
 archive:
-	cd $(package_path) && tar cf $(archive_path)/agonessdk-$(VERSION)-linux-arch_64.tar.gz *
+	cd $(package_path) && tar czf $(archive_path)/agonessdk-$(VERSION)-linux-arch_64.tar.gz *
 	
 clean:
 	-rm -rf $(build_path)
